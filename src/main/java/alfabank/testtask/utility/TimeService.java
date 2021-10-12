@@ -27,7 +27,7 @@ public class TimeService {
         LocalDateTime previousDate = LocalDateTime.ofInstant(Instant.ofEpochSecond(timestamp), ZoneId.systemDefault());
         LocalDateTime currentDate = LocalDateTime.ofInstant(Instant.now(), ZoneId.systemDefault());
         long minutes = Duration.between(previousDate,currentDate).toMinutes();
-        logger.info(minutes+" прошло с момента последнего обновления кусов");
+        logger.info(minutes+" прошло с момента последнего обновления курсов");
         return minutes > 60;
     }
 }
