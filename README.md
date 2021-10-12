@@ -8,6 +8,7 @@
       $ mkdir app - создать директорию для приложения
       $ cd app
       $ git clone https://github.com/antleva/test-task-app.git - скопировать проект из репозитория
+      $ cd test-task-app - перейти в папку проекта
       $ java -jar testTaskApplication-0.0.1-SNAPSHOT.jar - запуск приложения
       в браузере в поле адреса ввести http://localhost:8080
    
