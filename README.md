@@ -11,10 +11,16 @@
       $ cd test-task-app - перейти в папку проекта
       $ java -jar testTaskApplication-0.0.1-SNAPSHOT.jar - запуск приложения
       в браузере в поле адреса ввести http://localhost:8080
-   
+    
+    запуск из Dockerfile:
+      $ docker build -t test-task-app . - сборка контейнера из текущей директории
+      $ docker run -d -p 8080:8080 test-task-app - запуск контейнера в фоновом режиме, 
+      порт для доступа с контейнеру 8080, имя контейнера test-task-app 
+      в браузере в поле адреса ввести http://localhost:8080
+  
+        
     загрузка образа из DockerHub:
       $ docker push antonlevanov/test-task-app:0.1 - загрузка образа
       $ docker run -d -p 8080:8080 --name test-task-app test-task-app:0.1 - запуск контейнера в фоновом режиме, 
-      порт для доступа с контейнеру 8080, 
-      имя контейнера test-task-app
+      порт для доступа с контейнеру 8080, имя контейнера test-task-app
       в браузере в поле адреса ввести http://localhost:8080
