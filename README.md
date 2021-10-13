@@ -22,7 +22,7 @@
   
         
     загрузка образа из DockerHub:
-      $ docker push antonlevanov/test-task-app:0.1 - загрузка образа
+      $ docker pull antonlevanov/test-task-app:0.1 - загрузка образа
       $ docker run -d -p 8080:8080 --name test-task-app test-task-app:0.1 - запуск контейнера в фоновом режиме, 
       порт для доступа с контейнеру 8080, имя контейнера test-task-app
       в браузере в поле адреса ввести http://localhost:8080
